@@ -201,7 +201,29 @@ public class Gun : MonoBehaviour
          * Implement both single shot and shotgun (swap by pressing <SPACE> by default)
          */
 
-        SpawnBullet(director);
+        if (shotgun)
+        {
+            // decrease firerate
+            fireRate = 200.0f;
+
+            // initial rotation 
+            director.rotation *= Quaternion.AngleAxis(shotgunSpread/2, Vector3.forward);
+            // minus for rotation in oposite direction
+            var angleBetweenBullets = Quaternion.Euler(0.0f, 0.0f, -shotgunSpread / (shotgunBullets - 1));
+
+            for (int i = 0; i < shotgunBullets; i++)
+            {
+                SpawnBullet(director);
+                director.rotation *= angleBetweenBullets;
+            }
+        }
+        else // single shot
+        {
+            // increase firerate
+            fireRate = 600.0f;
+
+            SpawnBullet(director); 
+        }
     }
 
     /// <summary>
