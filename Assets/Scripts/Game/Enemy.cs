@@ -81,6 +81,8 @@ public class Enemy : MonoBehaviour
             Vector3 direction = nearestPlayer.transform.position - transform.position;
             Quaternion rot = Quaternion.LookRotation(direction, Vector3.forward);
             transform.rotation = rot;
+
+            mRigidBody.MovePosition(speed * Time.deltaTime * direction + transform.position);
         }
     }
 
