@@ -100,6 +100,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "c79efdba-b908-4489-bd2b-d203eeeb9c0f",
+                    "path": "<HID::USB,4-Axis,12-Button with POV>/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MyScheme",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "Keyboard",
                     "id": "d9879bd3-08fc-4e28-97bd-5ee14ec38be3",
                     "path": "2DVector",
@@ -156,6 +167,17 @@
                 },
                 {
                     "name": "",
+                    "id": "fd34bbb4-5f73-489e-9bef-eb902db7b5f2",
+                    "path": "<HID::USB,4-Axis,12-Button with POV>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MyScheme",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "73c0c27f-f796-424e-a561-f7a8a0074392",
                     "path": "<Mouse>/position",
                     "interactions": "",
@@ -164,6 +186,61 @@
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "a7a3b11e-6c49-4ddd-a3ba-a11fa44c325b",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "a936b8d7-e917-490b-acc1-817aa0fa09d7",
+                    "path": "<HID::USB,4-Axis,12-Button with POV>/rz",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MyScheme",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "5b8db3b3-53d6-4d9f-9f3e-5a0c84f5ed04",
+                    "path": "<HID::USB,4-Axis,12-Button with POV>/rz",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MyScheme",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "ab649eaf-a4c9-46f2-81c4-9ff0cbc4c83c",
+                    "path": "<HID::USB,4-Axis,12-Button with POV>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MyScheme",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "23b83d9d-4685-4432-b796-cd80785b5996",
+                    "path": "<HID::USB,4-Axis,12-Button with POV>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MyScheme",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "One Modifier",
@@ -260,6 +337,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "M&K1",
+                    "action": "ToggleShotgun",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5bac43af-80f6-4911-a607-ea2c831473bc",
+                    "path": "<HID::USB,4-Axis,12-Button with POV>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MyScheme",
                     "action": "ToggleShotgun",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -866,6 +954,17 @@
                 },
                 {
                     "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "MyScheme",
+            "bindingGroup": "MyScheme",
+            "devices": [
+                {
+                    "devicePath": "<HID::USB,4-Axis,12-Button with POV>",
                     "isOptional": false,
                     "isOR": false
                 }
