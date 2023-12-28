@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 474789398741644343, guid: 32da0a68aa2d0b54bb224636b533caf3, type: 3}
-  spawnDelay: 1
+  spawnDelay: 1.5
   spawnEnabled: 1
 --- !u!4 &107227361
 Transform:
@@ -750,6 +750,10 @@ PrefabInstance:
       propertyPath: m_NeverAutoSwitchControlSchemes
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1204133201242880330, guid: 44209977f93d7854bac517dff34087fc, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1395243261}
     - target: {fileID: 1204133201493807927, guid: 44209977f93d7854bac517dff34087fc, type: 3}
       propertyPath: spawnOffset
       value: 0.4
@@ -789,7 +793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 474789398741644343, guid: 32da0a68aa2d0b54bb224636b533caf3, type: 3}
-  spawnDelay: 1
+  spawnDelay: 1.5
   spawnEnabled: 1
 --- !u!4 &679277783
 Transform:
@@ -1327,7 +1331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1005452474
 Transform:
   m_ObjectHideFlags: 0
@@ -1669,9 +1673,9 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.14705881
+    x: 0.20456332
     y: 0
-    width: 0.7058824
+    width: 0.59087336
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -2082,7 +2086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 474789398741644343, guid: 32da0a68aa2d0b54bb224636b533caf3, type: 3}
-  spawnDelay: 1
+  spawnDelay: 1.5
   spawnEnabled: 1
 --- !u!4 &1817839095
 Transform:
@@ -2482,7 +2486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 474789398741644343, guid: 32da0a68aa2d0b54bb224636b533caf3, type: 3}
-  spawnDelay: 1
+  spawnDelay: 1.5
   spawnEnabled: 1
 --- !u!1001 &2113351538
 PrefabInstance:
